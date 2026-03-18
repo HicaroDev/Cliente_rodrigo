@@ -1,0 +1,13 @@
+node_modules/
+.venv/
+.claude/
+dist/
+.temp_ag_kit/
+.agent/
+package-lock.json
+*.xlsx
+planilha_analise.json
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
