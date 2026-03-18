@@ -1,4 +1,4 @@
-// 🎨 UI/UX PRO MAX — Premium Design System for Stela Dashboard
+// 🎨 UI/UX PRO MAX — Premium Design System for Rodrigo PRO Dashboard
 
 export const DRAWER_WIDTH = 260;
 
@@ -34,7 +34,7 @@ export const CARD_SHADOW = '0 2px 10px -1px rgba(0,0,0,0.05), 0 1px 4px -1px rgb
 export const FLOAT_SHADOW = (color) =>
   `0 8px 24px -6px rgba(0,0,0,0.16), 0 12px 20px -10px ${color}80`;
 
-export const STELA_SHADOWS = {
+export const RODRIGO_SHADOWS = {
   nav: '0 8px 16px -4px rgba(0,0,0,0.1)',
   card: '0 4px 20px 0 rgba(0,0,0,0.05)',
   button: '0 3px 5px -1px rgba(0,0,0,0.08), 0 2px 3px -1px rgba(0,0,0,0.05)',

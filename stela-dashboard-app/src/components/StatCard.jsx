@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Box, Typography, Divider, alpha } from '@mui/material';
 import { TrendingUp, TrendingDown } from '@mui/icons-material';
-import { STELA_SHADOWS, GREY, FLOAT_SHADOW } from '../theme';
+import { RODRIGO_SHADOWS, GREY, FLOAT_SHADOW } from '../theme';
 
 const StatCard = ({ title, value, badge, icon, color = 'primary', trend = null }) => {
   // Map color strings to theme gradients/colors

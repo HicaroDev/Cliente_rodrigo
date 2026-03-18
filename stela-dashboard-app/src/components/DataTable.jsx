@@ -3,7 +3,7 @@ import {
   TableRow, TableCell, TableBody, TableContainer, IconButton, alpha, LinearProgress, Tooltip
 } from '@mui/material';
 import { CheckCircle as CheckIcon, MoreVert, InfoOutlined, TrendingUp, TrendingDown } from '@mui/icons-material';
-import { GREY, SUCCESS, WARNING, ERROR, STELA_SHADOWS, INFO, PRIMARY } from '../theme';
+import { GREY, SUCCESS, WARNING, ERROR, RODRIGO_SHADOWS, INFO, PRIMARY } from '../theme';
 import { formatCurrency, formatPercent, getVal } from '../utils/dataUtils';
 
 const isPercentValue = (v) => {
@@ -31,7 +31,7 @@ export default function DataTable({ data = [], title = 'Painel de Indicadores', 
   }).length;
 
   return (
-    <Card sx={{ borderRadius: 4, overflow: 'hidden', boxShadow: STELA_SHADOWS.card, bgcolor: '#fff', border: `1px solid ${alpha(GREY[400], 0.05)}` }}>
+    <Card sx={{ borderRadius: 4, overflow: 'hidden', boxShadow: RODRIGO_SHADOWS.card, bgcolor: '#fff', border: `1px solid ${alpha(GREY[400], 0.05)}` }}>
       {/* Header */}
       <Box
         sx={{

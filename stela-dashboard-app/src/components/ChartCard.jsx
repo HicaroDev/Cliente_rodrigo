@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import { Card, Box, Typography, Divider, alpha, CircularProgress } from '@mui/material';
 import { Schedule } from '@mui/icons-material';
 import Chart from 'react-apexcharts';
-import { STELA_SHADOWS, GREY } from '../theme';
+import { RODRIGO_SHADOWS, GREY } from '../theme';
 
 /**
  * ChartCard — Premium gradient chart container
@@ -84,7 +84,7 @@ export default function ChartCard({
       p: 2, 
       pt: 0,
       borderRadius: 4, 
-      boxShadow: STELA_SHADOWS.card,
+      boxShadow: RODRIGO_SHADOWS.card,
       border: 'none',
       background: '#fff',
       transition: 'transform 0.2s ease',

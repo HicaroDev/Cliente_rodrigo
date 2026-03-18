@@ -40,7 +40,7 @@ export default function App() {
         setActiveMonth(sorted[sorted.length - 1]);
       }
     } catch (e) {
-      console.error('Stela Sync Error:', e);
+      console.error('Rodrigo PRO Sync Error:', e);
     } finally {
       setTimeout(() => setLoading(false), 800);
     }

@@ -9,7 +9,7 @@ import {
   RocketLaunch,
   AutoGraph
 } from '@mui/icons-material';
-import { DRAWER_WIDTH, PRIMARY, GREY, STELA_SHADOWS } from '../theme';
+import { DRAWER_WIDTH, PRIMARY, GREY, RODRIGO_SHADOWS } from '../theme';
 
 const Sidebar = ({ activeTab, onTabChange, onRefresh }) => {
   const menuItems = [
@@ -55,7 +55,7 @@ const Sidebar = ({ activeTab, onTabChange, onRefresh }) => {
              <RocketLaunch sx={{ color: '#fff', fontSize: 16 }} />
            </Box>
            <Typography sx={{ fontWeight: 500, letterSpacing: 0.5, fontSize: 18, color: '#344767', fontFamily: "'Outfit', sans-serif" }}>
-             STELA PRO
+             RODRIGO PRO
            </Typography>
         </Box>
         <Typography variant="caption" sx={{ color: GREY[400], fontWeight: 300, fontSize: 9, letterSpacing: 1.5, textTransform: 'uppercase' }}>
