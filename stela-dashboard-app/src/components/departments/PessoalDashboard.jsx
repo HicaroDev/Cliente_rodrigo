@@ -88,9 +88,8 @@ export default function PessoalDashboard({ data = [], activeMonth = 'Todos', onM
       />
       
       <Box sx={{ mt: 1, px: 0 }}>
-        <Grid container spacing={4}>
-
-          {/* KPI Row */}
+        {/* KPI Row - Line 1 */}
+        <Grid container spacing={3} sx={{ mb: 3 }}>
           <Grid item xs={12} sm={6} md={3}>
             <StatCard
               title="Efetivo Atual"
@@ -100,7 +99,6 @@ export default function PessoalDashboard({ data = [], activeMonth = 'Todos', onM
               color="success"
             />
           </Grid>
-
           <Grid item xs={12} sm={6} md={3}>
             <StatCard
               title="Taxa de Turnover"
@@ -110,7 +108,6 @@ export default function PessoalDashboard({ data = [], activeMonth = 'Todos', onM
               color="error"
             />
           </Grid>
-
           <Grid item xs={12} sm={6} md={3}>
             <StatCard
               title="Novas Entradas"
@@ -120,7 +117,6 @@ export default function PessoalDashboard({ data = [], activeMonth = 'Todos', onM
               color="warning"
             />
           </Grid>
-
           <Grid item xs={12} sm={6} md={3}>
             <StatCard
               title="Desligamentos"
@@ -130,8 +126,10 @@ export default function PessoalDashboard({ data = [], activeMonth = 'Todos', onM
               color="dark"
             />
           </Grid>
+        </Grid>
 
-          {/* Charts Row */}
+        {/* Charts Row - Line 2 */}
+        <Grid container spacing={3} sx={{ mb: 3 }}>
           <Grid item xs={12} md={6}>
             <ChartCard
               title="Quadro de Colaboradores"
@@ -147,7 +145,6 @@ export default function PessoalDashboard({ data = [], activeMonth = 'Todos', onM
               height={180}
             />
           </Grid>
-
           <Grid item xs={12} md={6}>
             <ChartCard
               title="Fluxo de Contratações"
@@ -160,12 +157,13 @@ export default function PessoalDashboard({ data = [], activeMonth = 'Todos', onM
               height={180}
             />
           </Grid>
+        </Grid>
 
-          {/* Table Row */}
+        {/* Table Row - Line 3 */}
+        <Grid container spacing={3}>
           <Grid item xs={12}>
             <DataTable data={data} activeMonth={activeMonth} title="Quadro de Indicadores DP — Ferreira Auditado" />
           </Grid>
-
         </Grid>
       </Box>
     </Box>

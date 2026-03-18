@@ -89,9 +89,8 @@ export default function FinanceiroDashboard({ data = [], activeMonth = 'Todos', 
       />
       
       <Box sx={{ mt: 1, px: 0 }}>
-        <Grid container spacing={4}>
-
-          {/* KPI Row */}
+        {/* KPI Row - Line 1 */}
+        <Grid container spacing={3} sx={{ mb: 3 }}>
           <Grid item xs={12} sm={6} md={3}>
             <StatCard
               title="Recebimentos Totais"
@@ -101,7 +100,6 @@ export default function FinanceiroDashboard({ data = [], activeMonth = 'Todos', 
               color="success"
             />
           </Grid>
-
           <Grid item xs={12} sm={6} md={3}>
             <StatCard
               title="Taxa Inadimplência"
@@ -111,7 +109,6 @@ export default function FinanceiroDashboard({ data = [], activeMonth = 'Todos', 
               color="error"
             />
           </Grid>
-
           <Grid item xs={12} sm={6} md={3}>
             <StatCard
               title="Lucro Operacional"
@@ -121,7 +118,6 @@ export default function FinanceiroDashboard({ data = [], activeMonth = 'Todos', 
               color="primary"
             />
           </Grid>
-
           <Grid item xs={12} sm={6} md={3}>
             <StatCard
               title="Margem de Lucro"
@@ -131,9 +127,11 @@ export default function FinanceiroDashboard({ data = [], activeMonth = 'Todos', 
               color="info"
             />
           </Grid>
+        </Grid>
 
-          {/* Charts Row */}
-          <Grid item xs={12} md={7}>
+        {/* Charts Row - Line 2 */}
+        <Grid container spacing={3} sx={{ mb: 3 }}>
+          <Grid item xs={12} md={6}>
             <ChartCard
               title="Análise de Performance"
               subtitle="Consolidado Real vs Planejado"
@@ -148,8 +146,7 @@ export default function FinanceiroDashboard({ data = [], activeMonth = 'Todos', 
               height={180}
             />
           </Grid>
-
-          <Grid item xs={12} md={5}>
+          <Grid item xs={12} md={6}>
             <ChartCard
               title="Evolução Financeira"
               subtitle="Curva de receita auditada"
@@ -161,12 +158,13 @@ export default function FinanceiroDashboard({ data = [], activeMonth = 'Todos', 
               height={180}
             />
           </Grid>
+        </Grid>
 
-          {/* Table Row */}
+        {/* Table Row - Line 3 */}
+        <Grid container spacing={3}>
           <Grid item xs={12}>
             <DataTable data={data} activeMonth={activeMonth} title="Balanço Consolidado — Ferreira Distribuidora" />
           </Grid>
-
         </Grid>
       </Box>
     </Box>
