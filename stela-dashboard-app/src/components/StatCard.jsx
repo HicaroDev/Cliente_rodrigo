@@ -37,6 +37,7 @@ const StatCard = ({ title, value, badge, icon, color = 'primary', trend = null }
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
+      minHeight: 135, // 🔒 Fixed height for clean alignment
     }}>
       {/* Elevated Icon Box */}
       <Box sx={{ 
